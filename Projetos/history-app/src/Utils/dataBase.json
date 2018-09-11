@@ -1,0 +1,50 @@
+{
+  "English": {
+    "language": "english",
+    "title": "History App",
+    "subtitle": "App for the study of the history",
+    "buttonText": "Get Started",
+    "titleChangeLanguage": "Languages",
+    "createAccount": "Create Account",
+    "nickname": "Nickname",
+    "email": "Email",
+    "password": "Password",
+    "confirmPass": "Confirm Password",
+    "create": "Create",
+    "signIn": "Go In",
+    "dontAccount": "Don't have account? Create",
+    "here": "here"
+  },
+  "Español": {
+    "language": "spanish",
+    "title": "Historia App",
+    "subtitle": "App para el estudio de la historia",
+    "buttonText": "Comienzo",
+    "titleChangeLanguage": "Idioma",
+    "createAccount": "Crear una cuenta",
+    "nickname": "Apodo",
+    "email": "Email",
+    "password": "Contraseña",
+    "confirmPass": "Confirmar contraseña",
+    "create": "Crear",
+    "signIn": "Entrar",
+    "dontAccount": "No tienes cuenta? Crea",
+    "here": "aquí"
+  },
+  "Português": {
+    "language": "portuguese",
+    "title": "História App",
+    "subtitle": "App para o estudo da história",
+    "buttonText": "Começar",
+    "titleChangeLanguage": "Idioma",
+    "createAccount": "Criar Conta",
+    "nickname": "Nickname",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirmPass": "Confirmar Senha",
+    "create": "Criar",
+    "signIn": "Entrar",
+    "dontAccount": "Não tem conta? Crie",
+    "here": "aqui"
+  }
+}
