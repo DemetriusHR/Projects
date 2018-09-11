@@ -193,7 +193,7 @@ const PageLoginWrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
     .login-card {
       right: -1%;
       padding: 27px 10% 0;
