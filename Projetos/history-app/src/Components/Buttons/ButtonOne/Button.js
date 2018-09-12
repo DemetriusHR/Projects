@@ -30,10 +30,10 @@ const ButtonWrapper = styled.div`
 
   @keyframes radial-pulse {
     0% {
-      box-shadow: 0 0 0 0 rgba(107, 107, 107, 0.4);
+      box-shadow: 0 0 0 0 #44444414;
     }
     100% {
-      box-shadow: 0 0 0 20px rgba(218, 218, 218, 0);
+      box-shadow: 0 0 0 13px #48484805;
     }
   }
 `;

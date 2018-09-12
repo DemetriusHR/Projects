@@ -27,15 +27,15 @@ const ButtonWrapper = styled.div`
 
   .text:hover {
     cursor: pointer;
-    animation: radial-pulse 1s infinite;
+    animation: radial-pulse-2 1s infinite;
   }
 
-  @keyframes radial-pulse {
+  @keyframes radial-pulse-2 {
     0% {
       box-shadow: 0 0 0 0 rgba(191, 191, 191, 0.34);
     }
     100% {
-      box-shadow: 0 0 0 13px rgba(218,218,218,0);
+      box-shadow: 0 0 0 13px rgba(218, 218, 218, 0);
     }
   }
 `;

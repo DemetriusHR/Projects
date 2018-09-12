@@ -46,5 +46,10 @@
     "signIn": "Entrar",
     "dontAccount": "Não tem conta? Crie",
     "here": "aqui"
+  },
+  "login" : {
+    "nickname" : "dimerAdmin",
+    "email" : "dimerAdmin@gmail.com",
+    "password" : "dimadm@bc123"
   }
 }

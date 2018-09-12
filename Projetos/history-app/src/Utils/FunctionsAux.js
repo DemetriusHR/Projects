@@ -1,7 +1,7 @@
-function onCompare (state, language) {
-    return state === language ? '1px solid #00000052' : '';
+function onCompare(state, language) {
+  return state === language ? '1px solid #00000052' : '';
 }
 
 export {
-    onCompare
+  onCompare
 };
