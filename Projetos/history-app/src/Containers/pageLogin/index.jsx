@@ -24,7 +24,7 @@ class PageLogin extends React.PureComponent {
 
     return (
       <PageLoginWrapper>
-        <ChangeLanguage language={language} />
+        <ChangeLanguage />
         <div className="login-card">
           <div className="esc-card">
             <Link to="/">
@@ -61,7 +61,9 @@ class PageLogin extends React.PureComponent {
                   <input type="email" required="required" />
                   <p>{dataBase[language].password}</p>
                   <input type="password" required="required" />
-                  <Button text={dataBase[language].signIn} />
+                  <Link to="/index">
+                    <Button text={dataBase[language].signIn} />
+                  </Link>
                 </div>
                 <div className="finish-card">
                   <p>

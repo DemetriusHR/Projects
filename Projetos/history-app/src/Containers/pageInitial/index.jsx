@@ -11,7 +11,7 @@ const PageInitial = (props) => {
   const { language } = props;
   return (
     <PageInitialWrapper>
-      <ChangeLanguage language={language} />
+      <ChangeLanguage />
       <h1>
         {dataBase[language].title}
       </h1>

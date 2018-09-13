@@ -1,0 +1,23 @@
+{
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": ["last 2 versions"]
+          },
+          "debug": false
+        }
+      ],
+      "react",
+      "stage-1"
+    ],
+    "plugins": [
+      [
+        "transform-runtime",
+        "react-hot-loader/babel",
+        "import"
+      ]
+    ]
+  }
+  
