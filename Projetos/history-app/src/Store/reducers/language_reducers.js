@@ -1,7 +1,10 @@
-import { LANGUAGE_ENGLISH, LANGUAGE_ESPANOL, LANGUAGE_PORTUGUES } from '../actions/actions_types';
+import {
+  LANGUAGE_ENGLISH, LANGUAGE_ESPANOL, LANGUAGE_PORTUGUES, CREATE_ACCOUNT, OUT_LOGIN
+} from '../actions/actions_types';
 
 const initialState = {
-  language: 'English'
+  language: 'English',
+  createAccount: false
 };
 
 const languageReducer = (state = initialState, action) => {
@@ -22,6 +25,18 @@ const languageReducer = (state = initialState, action) => {
       return {
         ...state,
         language: 'Português'
+      };
+
+    case CREATE_ACCOUNT:
+      return {
+        ...state,
+        createAccount: true
+      };
+
+    case OUT_LOGIN:
+      return {
+        ...state,
+        createAccount: false
       };
 
     default:

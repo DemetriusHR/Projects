@@ -3,77 +3,35 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import PageLoginWrapper from './pageLoginStyle';
-import Button from '../../Components/Buttons/ButtonTwo';
+
+import CreateCard from './Components/createCard';
+import LoginCard from './Components/loginCard';
 import ChangeLanguage from '../../Components/ChangeLanguage';
 import dataBase from '../../Utils/dataBase';
+import { onOutLogin } from '../../Store/actions/index';
 
 class PageLogin extends React.PureComponent {
-  state = {
-    createAccount: false
-  }
-
-  onClickCreate = () => {
-    this.setState({
-      createAccount: true
-    });
+  onEsc = (event) => {
+    event.preventDefault();
+    this.props.onOutLogin(); /* eslint-disable-line */
   }
 
   render() {
-    const { language } = this.props;
-    const { createAccount } = this.state;
-
+    const { language, createAccount } = this.props;
     return (
       <PageLoginWrapper>
         <ChangeLanguage />
         <div className="login-card">
-          <div className="esc-card">
+          <div className="esc-card" onClick={(e) => this.onEsc(e)}>
             <Link to="/">
               X
             </Link>
           </div>
           <div className="login">
             {createAccount ? (
-              <React.Fragment>
-                <div className="header-card header-card-create">
-                  <h1>
-                    {dataBase[language].createAccount}
-                  </h1>
-                </div>
-                <div className="content-card content-card-create">
-                  <p>{dataBase[language].nickname}</p>
-                  <input type="text" required="required" />
-                  <p>{dataBase[language].email}</p>
-                  <input type="email" required="required" />
-                  <p>{dataBase[language].password}</p>
-                  <input type="password" required="required" />
-                  <p>{dataBase[language].confirmPass}</p>
-                  <input type="password" required="required" />
-                  <Button text={<span>{dataBase[language].create}</span>} />
-                </div>
-              </React.Fragment>
+              <CreateCard data={dataBase[language]} />
             ) : (
-              <React.Fragment>
-                <div className="header-card">
-                  <h1> Login </h1>
-                </div>
-                <div className="content-card">
-                  <p>{dataBase[language].email}</p>
-                  <input type="email" required="required" />
-                  <p>{dataBase[language].password}</p>
-                  <input type="password" required="required" />
-                  <Link to="/index">
-                    <Button text={dataBase[language].signIn} />
-                  </Link>
-                </div>
-                <div className="finish-card">
-                  <p>
-                    {dataBase[language].dontAccount}
-                    <span className="here-finish" onClick={() => this.onClickCreate()}>
-                      {` ${dataBase[language].here}`}
-                    </span>
-                  </p>
-                </div>
-              </React.Fragment>
+              <LoginCard data={dataBase[language]} />
             )}
           </div>
         </div>
@@ -84,8 +42,9 @@ class PageLogin extends React.PureComponent {
 
 const mapStateToProps = state => {
   return {
-    language: state.language.language
+    language: state.language.language,
+    createAccount: state.createAccount.createAccount
   };
 };
 
-export default connect(mapStateToProps)(PageLogin);
+export default connect(mapStateToProps, { onOutLogin })(PageLogin);

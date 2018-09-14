@@ -1,1 +1,3 @@
-export { languageEnglish, languageEspanol, languagePortugues } from './languages_actions';
+export {
+  languageEnglish, languageEspanol, languagePortugues, onCreateAccount, onOutLogin
+} from './languages_actions';

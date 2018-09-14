@@ -76,7 +76,7 @@ const PageLoginWrapper = styled.div`
       }
 
       .header-card-create {
-        margin-top: 20px;   
+        margin-top: 20px; 
       }
 
       .content-card {
@@ -209,6 +209,10 @@ const PageLoginWrapper = styled.div`
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
+  }
+  
+  .dZxRSE {
+    padding-top: 1vh;
   }
 `;
 
