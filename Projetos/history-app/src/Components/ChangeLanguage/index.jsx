@@ -1,52 +1,49 @@
-import React from 'react';
-import { connect } from 'react-redux';
-
+import React, { useContext } from 'react';
 import ChangeLanguageWrapper from './ChangeLanguageStyle';
-import dataBase from '../../Utils/dataBase';
 import { onCompare } from '../../Utils/FunctionsAux';
-import { languageEnglish, languageEspanol, languagePortugues } from '../../Store/actions';
+import { LanguageContext } from '../../Context';
 
-const ChangeLanguage = (props) => {
-  const { language } = props;
+const ChangeLanguage = ({ border }) => {
+  const {
+    language,
+    actions: {
+      changeLanguagueEnglish,
+      changeLanguagueEspanol,
+      changeLanguaguePortugues
+    },
+    dataBase: { titleChangeLanguage }
+  } = useContext(LanguageContext);
+
   return (
-    <ChangeLanguageWrapper>
-      <p className="title">
-        {dataBase[language].titleChangeLanguage}
-      </p>
-      <span
-        className="language"
-        style={{ border: `${onCompare(language, 'English')}` }}
-        onClick={() => props.languageEnglish()}
-      >
-        English
-      </span>
-      <span
-        className="language"
-        style={{ border: `${onCompare(language, 'Português')}` }}
-        onClick={() => props.languagePortugues()}
-      >
-        Português
-      </span>
-      <span
-        className="language"
-        style={{ border: `${onCompare(language, 'Español')}` }}
-        onClick={() => props.languageEspanol()}
-      >
-        Español
-      </span>
-    </ChangeLanguageWrapper>
+    <div className="dont-select">
+      <ChangeLanguageWrapper>
+        <p className="title">{titleChangeLanguage}</p>
+        <span
+          className="language"
+          style={{ borderBottom: `${onCompare(language, 'English', border)}` }}
+          onClick={changeLanguagueEnglish}
+        >
+          English
+        </span>
+        <span
+          className="language"
+          style={{
+            borderBottom: `${onCompare(language, 'Português', border)}`
+          }}
+          onClick={changeLanguaguePortugues}
+        >
+          Português
+        </span>
+        <span
+          className="language"
+          style={{ borderBottom: `${onCompare(language, 'Español', border)}` }}
+          onClick={changeLanguagueEspanol}
+        >
+          Español
+        </span>
+      </ChangeLanguageWrapper>
+    </div>
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    language: state.language.language
-  };
-};
-export default connect(
-  mapStateToProps,
-  {
-    languageEnglish,
-    languageEspanol,
-    languagePortugues
-  })(ChangeLanguage);
+export default ChangeLanguage;

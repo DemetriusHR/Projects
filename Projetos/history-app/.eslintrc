@@ -1,6 +1,7 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb" , "prettier"],
   "parser": "babel-eslint",
+  "plugins": ["prettier"],
   "rules": {
     "linebreak-style": "off",
     "no-alert": "error",
@@ -14,7 +15,8 @@
     "function-paren-newline": "off",
     "react/prop-types": "off",
     "react/no-did-mount-set-state": "off",
-    "jsx-a11y/no-static-element-interactions" : "off"
+    "jsx-a11y/no-static-element-interactions" : "off",
+    "prettier/prettier": "error"
   },
   "env": {
     "browser": true,

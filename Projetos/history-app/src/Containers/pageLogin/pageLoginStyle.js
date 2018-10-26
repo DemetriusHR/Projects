@@ -5,58 +5,25 @@ const PageLoginWrapper = styled.div`
   background: #6748327a;
   color: #5b5149;
 
-  .languages {
-    padding: 7px;
-    font-size: 9px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-
-    .title {
-      margin: 0;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      font-weight: 600;
-    }
-
-    .language {
-      padding: 1px 10px;
-      border-radius: 3px;
-    }
-
-    .language:hover {
-      cursor: pointer;
-    }
-  }
-
   .login-card {
     right: 24%;
-    position: absolute;
     padding: 27px 10% 20px;
+    position: absolute;
     animation-name: fadeInDown;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
 
     .esc-card {
       width: 3%;
       cursor: pointer;
-      -webkit-touch-callout: none;
-        -webkit-user-select: none;
-         -khtml-user-select: none;
-           -moz-user-select: none;
-            -ms-user-select: none;
-                user-select: none;
     }
 
     .login {
-      background: #fff;
       height: 80vh;
       width: 60vh;
-      border-radius: 6px;
-      box-shadow: 3px 3px 3px 0px #88888885;
       padding: 10px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 3px 3px 3px 0px #88888885;
 
       .header-card {
         margin-top: 40px;
@@ -76,7 +43,7 @@ const PageLoginWrapper = styled.div`
       }
 
       .header-card-create {
-        margin-top: 20px; 
+        margin-top: 20px;
       }
 
       .content-card {
@@ -103,7 +70,7 @@ const PageLoginWrapper = styled.div`
           border-bottom: 1px solid #25b960;
         }
       }
-      
+
       .content-card-create {
         margin-top: -33px;
       }
@@ -114,20 +81,28 @@ const PageLoginWrapper = styled.div`
 
         .here-finish {
           cursor: pointer;
-          -webkit-touch-callout: none;
-            -webkit-user-select: none;
-             -khtml-user-select: none;
-               -moz-user-select: none;
-                -ms-user-select: none;
-                    user-select: none;
+          font-size: 15px;
+          font-weight: 550;
+          color: #9a8e86;
         }
 
         .here-finish:hover {
           color: #000;
         }
-
       }
     }
+  }
+
+  .div-error {
+    bottom: 4px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #44444454;
+    position: fixed;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
   }
 
   @media screen and (max-width: 600px) {
@@ -135,7 +110,7 @@ const PageLoginWrapper = styled.div`
       .login-card {
         right: 0.3%;
         padding: 24px 0% 0px;
-        
+
         .login {
           width: 66vh;
           padding: 1px;
@@ -146,7 +121,7 @@ const PageLoginWrapper = styled.div`
 
           .content-card {
             p {
-              margin-top: 26px;
+              margin-top: 18px;
             }
           }
         }
@@ -160,11 +135,18 @@ const PageLoginWrapper = styled.div`
 
         .login {
           width: 53vh;
-          padding: 8px
+          padding: 8px;
+        }
+      }
+      @media (max-height: 568px) {
+        .content-card {
+          p {
+            margin-top: 30px !important;
+          }
         }
       }
     }
-    
+
     @media (min-height: 575px) {
       .login-card {
         right: 1%;
@@ -204,13 +186,13 @@ const PageLoginWrapper = styled.div`
       opacity: 0;
       transform: translate3d(0, -100%, 0);
     }
-  
+
     to {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
   }
-  
+
   .dZxRSE {
     padding-top: 1vh;
   }

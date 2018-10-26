@@ -1,10 +1,12 @@
 import React from 'react';
 
-import ButtonWrapper from './ButtonStyle';
+import { ButtonWrapper, ComponentWrapper, TextWrapper } from './ButtonStyle';
 
 const Button = ({ text }) => (
   <ButtonWrapper>
-    <p className="component"><span className="text">{text}</span></p>
+    <ComponentWrapper>
+      <TextWrapper className="dont-select">{text}</TextWrapper>
+    </ComponentWrapper>
   </ButtonWrapper>
 );
 

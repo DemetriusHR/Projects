@@ -13,7 +13,55 @@
     "create": "Create",
     "signIn": "Go In",
     "dontAccount": "Don't have account? Create",
-    "here": "here"
+    "here": "here",
+    "logoff": "Log off",
+    "errorValueNull": "error: password can't have value null",
+    "errorNotEqual": "error: password and confirm password not equals",
+    "errorEmail": "erro: Email already registered",
+    "errorNickname": "erro: Nickname already registered",
+    "detailsWord": "details",
+    "cards": [
+      {
+        "id": 0,
+        "title": "testing1",
+        "subtitle": "testingSubtitle1",
+        "img": "https://cdn-images-1.medium.com/fit/t/800/240/1*ZQQCv2qE68U7S9ya-59TzQ.jpeg",
+        "description": "In the first week, we will worship the Lord. We are the only country where there is no printed vote. We have to dive and work by ballot, because there are frauds in electronic ballot boxes.",
+        "details": "Redux is a simple, incredible library that makes it easy to write straightforward and testable state management code. On Azure DevOps, we wanted to modernize how we approached state management by introducing Redux into our system. However, we quickly identified two classes of problems that occur when using Redux at a large scale."
+      },
+      {
+        "id": 1,
+        "title": "testing2",
+        "subtitle": "testingSubtitle2",
+        "img": "https://cdn-images-1.medium.com/fit/t/1600/480/1*PbPHtwX6S18YjjHKRzCqPg.png",
+        "description": "In the first week, we will worship the Lord. We are the only country where there is no printed vote. We have to dive and work by ballot, because there are frauds in electronic ballot boxes.",
+        "details": "Redux is a simple, incredible library that makes it easy to write straightforward and testable state management code. On Azure DevOps, we wanted to modernize how we approached state management by introducing Redux into our system. However, we quickly identified two classes of problems that occur when using Redux at a large scale."
+      },
+      {
+        "id": 2,
+        "title": "testing3",
+        "subtitle": "testingSubtitle3",
+        "img": "https://camo.githubusercontent.com/7a75c94cd088b6ae393cc2648d6d7f9a45ff0b5a/68747470733a2f2f636c6475702e636f6d2f4d785356456b635f67622e706e67",
+        "description": "In the first week, we will worship the Lord. We are the only country where there is no printed vote. We have to dive and work by ballot, because there are frauds in electronic ballot boxes.",
+        "details": "Redux is a simple, incredible library that makes it easy to write straightforward and testable state management code. On Azure DevOps, we wanted to modernize how we approached state management by introducing Redux into our system. However, we quickly identified two classes of problems that occur when using Redux at a large scale."
+      },
+      {
+        "id": 3,
+        "title": "testing4",
+        "subtitle": "testingSubtitle4",
+        "img": "",
+        "description": "In the first week, we will worship the Lord. We are the only country where there is no printed vote. We have to dive and work by ballot, because there are frauds in electronic ballot boxes.",
+        "details": "Redux is a simple, incredible library that makes it easy to write straightforward and testable state management code. On Azure DevOps, we wanted to modernize how we approached state management by introducing Redux into our system. However, we quickly identified two classes of problems that occur when using Redux at a large scale."
+      },
+      {
+        "id": 4,
+        "title": "",
+        "subtitle": "",
+        "img": "",
+        "description": "",
+        "details": ""
+      }
+    ]
   },
   "Español": {
     "language": "spanish",
@@ -29,7 +77,47 @@
     "create": "Crear",
     "signIn": "Entrar",
     "dontAccount": "No tienes cuenta? Crea",
-    "here": "aquí"
+    "here": "aquí",
+    "errorValueNull": "error: La contraseña no puede tener valor vacío",
+    "errorNotEqual": "error: contraseña y confirmación de contraseña no son iguales",
+    "errorEmail": "erro: Email ya registrado",
+    "errorNickname": "erro: Apodo ya registrado",
+    "logoff": "Desconectarse",
+    "detailsWord": "detalles",
+    "cards": [
+      {
+        "id": 0,
+        "title": "teste1",
+        "subtitle": "testandoSubtítulo1",
+        "img": "https://cdn-images-1.medium.com/fit/t/800/240/1*ZQQCv2qE68U7S9ya-59TzQ.jpeg",
+        "description": "En la primera semana, adoramos al Señor. Somos el único país donde no existe el voto impreso. Tenemos que sumergirse y trabajar por el voto en cédula, porque existen fraudes en las urnas electrónicas.",
+        "details": "Redux es una biblioteca simple e increíble que facilita la escritura de códigos de administración de estado sencillos y comprobables. En Azure DevOps, queríamos modernizar la forma en que abordamos la administración estatal mediante la introducción de Redux en nuestro sistema. Sin embargo, rápidamente identificamos dos clases de problemas que ocurren cuando se usa Redux a gran escala."
+      },
+      {
+        "id": 1,
+        "title": "teste2",
+        "subtitle": "testandoSubtítulo2",
+        "img": "https://cdn-images-1.medium.com/fit/t/1600/480/1*PbPHtwX6S18YjjHKRzCqPg.png",
+        "description": "En la primera semana, adoramos al Señor. Somos el único país donde no existe el voto impreso. Tenemos que sumergirse y trabajar por el voto en cédula, porque existen fraudes en las urnas electrónicas.",
+        "details": "Redux es una biblioteca simple e increíble que facilita la escritura de códigos de administración de estado sencillos y comprobables. En Azure DevOps, queríamos modernizar la forma en que abordamos la administración estatal mediante la introducción de Redux en nuestro sistema. Sin embargo, rápidamente identificamos dos clases de problemas que ocurren cuando se usa Redux a gran escala."
+      },
+      {
+        "id": 2,
+        "title": "teste3",
+        "subtitle": "testandoSubtítulo3",
+        "img": "https://camo.githubusercontent.com/7a75c94cd088b6ae393cc2648d6d7f9a45ff0b5a/68747470733a2f2f636c6475702e636f6d2f4d785356456b635f67622e706e67",
+        "description": "En la primera semana, adoramos al Señor. Somos el único país donde no existe el voto impreso. Tenemos que sumergirse y trabajar por el voto en cédula, porque existen fraudes en las urnas electrónicas.",
+        "details": "Redux es una biblioteca simple e increíble que facilita la escritura de códigos de administración de estado sencillos y comprobables. En Azure DevOps, queríamos modernizar la forma en que abordamos la administración estatal mediante la introducción de Redux en nuestro sistema. Sin embargo, rápidamente identificamos dos clases de problemas que ocurren cuando se usa Redux a gran escala."
+      },
+      {
+        "id": 3,
+        "title": "teste4",
+        "subtitle": "testandoSubtítulo4",
+        "img": "",
+        "description": "En la primera semana, adoramos al Señor. Somos el único país donde no existe el voto impreso. Tenemos que sumergirse y trabajar por el voto en cédula, porque existen fraudes en las urnas electrónicas.",
+        "details": "Redux es una biblioteca simple e increíble que facilita la escritura de códigos de administración de estado sencillos y comprobables. En Azure DevOps, queríamos modernizar la forma en que abordamos la administración estatal mediante la introducción de Redux en nuestro sistema. Sin embargo, rápidamente identificamos dos clases de problemas que ocurren cuando se usa Redux a gran escala."
+      }
+    ]
   },
   "Português": {
     "language": "portuguese",
@@ -38,18 +126,67 @@
     "buttonText": "Começar",
     "titleChangeLanguage": "Idioma",
     "createAccount": "Criar Conta",
-    "nickname": "Nickname",
+    "nickname": "Apelido",
     "email": "E-mail",
     "password": "Senha",
     "confirmPass": "Confirmar Senha",
     "create": "Criar",
     "signIn": "Entrar",
     "dontAccount": "Não tem conta? Crie",
-    "here": "aqui"
+    "here": "aqui",
+    "errorValueNull": "erro: senha não pode ter valor vazio",
+    "errorNotEqual": "erro: senha e confirmar senha não são iguais",
+    "errorEmail": "erro: E-mail já cadastrado",
+    "errorNickname": "erro: Apelido já cadatrado",
+    "logoff": "Sair",
+    "detailsWord": "detalhes",
+    "cards": [
+      {
+        "id": 0,
+        "title": "teste1",
+        "subtitle": "testandoSubtitulo1",
+        "img": "https://cdn-images-1.medium.com/fit/t/800/240/1*ZQQCv2qE68U7S9ya-59TzQ.jpeg",
+        "description": "Na primeira semana, vamos adorar o Senhor. Somos o único país onde não existe o voto impresso. Temos que mergulhar e trabalhar pelo voto em cédula, porque existem fraudes nas urnas eletrônicas.",
+        "details": "O Redux é uma biblioteca simples e incrível que facilita escrever código de gerenciamento de estado simples e testável. No Azure DevOps, queríamos modernizar a maneira como abordamos o gerenciamento de estado, introduzindo o Redux em nosso sistema. No entanto, identificamos rapidamente duas classes de problemas que ocorrem ao usar o Redux em larga escala."
+      },
+      {
+        "id": 1,
+        "title": "teste2",
+        "subtitle": "testandoSubtitulo2",
+        "img": "https://cdn-images-1.medium.com/fit/t/1600/480/1*PbPHtwX6S18YjjHKRzCqPg.png",
+        "description": "Na primeira semana, vamos adorar o Senhor. Somos o único país onde não existe o voto impresso. Temos que mergulhar e trabalhar pelo voto em cédula, porque existem fraudes nas urnas eletrônicas.",
+        "details": "O Redux é uma biblioteca simples e incrível que facilita escrever código de gerenciamento de estado simples e testável. No Azure DevOps, queríamos modernizar a maneira como abordamos o gerenciamento de estado, introduzindo o Redux em nosso sistema. No entanto, identificamos rapidamente duas classes de problemas que ocorrem ao usar o Redux em larga escala."
+      },
+      {
+        "id": 2,
+        "title": "teste3",
+        "subtitle": "testandoSubtitulo3",
+        "img": "https://camo.githubusercontent.com/7a75c94cd088b6ae393cc2648d6d7f9a45ff0b5a/68747470733a2f2f636c6475702e636f6d2f4d785356456b635f67622e706e67",
+        "description": "Na primeira semana, vamos adorar o Senhor. Somos o único país onde não existe o voto impresso. Temos que mergulhar e trabalhar pelo voto em cédula, porque existem fraudes nas urnas eletrônicas.",
+        "details": "O Redux é uma biblioteca simples e incrível que facilita escrever código de gerenciamento de estado simples e testável. No Azure DevOps, queríamos modernizar a maneira como abordamos o gerenciamento de estado, introduzindo o Redux em nosso sistema. No entanto, identificamos rapidamente duas classes de problemas que ocorrem ao usar o Redux em larga escala."
+      },
+      {
+        "id": 3,
+        "title": "teste4",
+        "subtitle": "testandoSubtitulo4",
+        "img": "",
+        "description": "Na primeira semana, vamos adorar o Senhor. Somos o único país onde não existe o voto impresso. Temos que mergulhar e trabalhar pelo voto em cédula, porque existem fraudes nas urnas eletrônicas.",
+        "details": "O Redux é uma biblioteca simples e incrível que facilita escrever código de gerenciamento de estado simples e testável. No AzOup DevOps, queríamos modernizar a maneira como abordamos o gerenciamento de estado, introduzindo o Redux em nosso sistema. No entanto, identificamos rapidamente duas classes de problemas que ocorrem ao usar o Redux em larga escala."
+      }
+    ]
   },
-  "login" : {
-    "nickname" : "dimerAdmin",
-    "email" : "dimerAdmin@gmail.com",
-    "password" : "dimadm@bc123"
-  }
+  "login": [
+    {
+      "id": 0,
+      "nickname": "root",
+      "email": "root@gmail.com",
+      "password": "root123"
+    },
+    {
+      "id": 1,
+      "nickname": "dimerAdmin",
+      "email": "dimerAdmin@gmail.com",
+      "password": "@dale1234"
+    }
+  ]
 }

@@ -1,39 +1,86 @@
-import React from 'react';
+import React, { Fragment, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
 
 import Button from '../../../Components/Buttons/ButtonTwo';
-import { onCreateAccount } from '../../../Store/actions/index';
+import { LanguageContext } from '../../../Context';
 
-const LoginCard = (props) => {
+function LoginCard() {
+  const [state, setState] = useState({
+    emailLogin: '',
+    passwordLogin: '',
+    loginVerify: true
+  });
+
   const {
-    email, password, signIn, dontAccount, here
-  } = props.data;
+    actions: { onLogin, onClickOk, onCreateAccount },
+    dataBase: { email, nickname, password, signIn, dontAccount, here }
+  } = useContext(LanguageContext);
+  const onLoginnig = onLogin(state.emailLogin, state.passwordLogin);
+
+  function onChange(e) {
+    const { value, name } = e.target;
+
+    setState((statePrev) => ({
+      ...statePrev,
+      [name]: value
+    }));
+  }
 
   return (
-    <React.Fragment>
-      <div className="header-card">
-        <h1> Login </h1>
-      </div>
-      <div className="content-card">
-        <p>{email}</p>
-        <input type="email" required="required" />
-        <p>{password}</p>
-        <input type="password" required="required" />
-        <Link to="/index">
-          <Button text={signIn} />
-        </Link>
-      </div>
-      <div className="finish-card">
-        <p>
-          {dontAccount}
-          <span className="here-finish" onClick={() => props.onCreateAccount()}>
-            {` ${here}`}
-          </span>
-        </p>
-      </div>
-    </React.Fragment>
-  );
-};
+    <Fragment>
+      <form>
+        <div className="header-card">
+          <h1> Login </h1>
+        </div>
+        <div className="content-card">
+          <p>{`${email} / ${nickname}`}</p>
+          <input
+            type="email"
+            name="emailLogin"
+            value={state.emailLogin}
+            onChange={(e) => onChange(e)}
+            required="required"
+            style={{
+              borderBottom: `${state.loginVerify ? '' : '1px solid red'}`
+            }}
+          />
+          <p>{password}</p>
+          <input
+            type="password"
+            name="passwordLogin"
+            value={state.passwordLogin}
+            onChange={(e) => onChange(e)}
+            required="required"
+            style={{
+              borderBottom: `${state.loginVerify ? '' : '1px solid red'}`
+            }}
+          />
+          <Link
+            to={`${onLoginnig ? '/index' : '/login'}`}
+            onClick={() => {
+              onClickOk(onLoginnig, state.emailLogin, state.passwordLogin);
 
-export default connect(null, { onCreateAccount })(LoginCard);
+              setState({
+                emailLogin: '',
+                passwordLogin: '',
+                loginVerify: onLoginnig
+              });
+            }}
+          >
+            <Button text={signIn} />
+          </Link>
+        </div>
+        <div className="finish-card">
+          <p>
+            {dontAccount}
+            <span className="here-finish dont-select" onClick={onCreateAccount}>
+              {` ${here}`}
+            </span>
+          </p>
+        </div>
+      </form>
+    </Fragment>
+  );
+}
+
+export default LoginCard;

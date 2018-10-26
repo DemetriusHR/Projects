@@ -1,10 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import ButtonWrapper from './Button';
+import { ButtonWrapper, ComponentWrapper, TextWrapper } from './Button';
 
-const Button = ({ text }) => (
+const Button = ({ text, link }) => (
   <ButtonWrapper>
-    <p className="component"><span className="text">{text}</span></p>
+    <ComponentWrapper>
+      {link !== undefined ? (
+        <Link to={link}>
+          <TextWrapper className="dont-select">{text}</TextWrapper>
+        </Link>
+      ) : (
+        <TextWrapper className="dont-select">{text}</TextWrapper>
+      )}
+    </ComponentWrapper>
   </ButtonWrapper>
 );
 

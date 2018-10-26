@@ -1,50 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
 
 import PageLoginWrapper from './pageLoginStyle';
 
-import CreateCard from './Components/createCard';
-import LoginCard from './Components/loginCard';
 import ChangeLanguage from '../../Components/ChangeLanguage';
-import dataBase from '../../Utils/dataBase';
-import { onOutLogin } from '../../Store/actions/index';
+import Body from './Components/Body';
 
-class PageLogin extends React.PureComponent {
-  onEsc = (event) => {
-    event.preventDefault();
-    this.props.onOutLogin(); /* eslint-disable-line */
-  }
-
-  render() {
-    const { language, createAccount } = this.props;
-    return (
-      <PageLoginWrapper>
-        <ChangeLanguage />
-        <div className="login-card">
-          <div className="esc-card" onClick={(e) => this.onEsc(e)}>
-            <Link to="/">
-              X
-            </Link>
-          </div>
-          <div className="login">
-            {createAccount ? (
-              <CreateCard data={dataBase[language]} />
-            ) : (
-              <LoginCard data={dataBase[language]} />
-            )}
-          </div>
-        </div>
-      </PageLoginWrapper>
-    );
-  }
-}
-
-const mapStateToProps = state => {
-  return {
-    language: state.language.language,
-    createAccount: state.createAccount.createAccount
-  };
+const PageLogin = () => {
+  return (
+    <PageLoginWrapper>
+      <ChangeLanguage />
+      <Body />
+    </PageLoginWrapper>
+  );
 };
 
-export default connect(mapStateToProps, { onOutLogin })(PageLogin);
+export default PageLogin;

@@ -1,23 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './index.css';
 import PageInitial from './Containers/pageInitial';
 import PageLogin from './Containers/pageLogin';
-import PageContent from './Containers/pageContent';
-import configStore from './Store/config_store';
-
-const store = configStore();
+import PageIndex from './Containers/pageIndex';
+import registerServiceWorker from './registerServiceWorker';
+import LanguageProvider from './Context';
 
 ReactDOM.render(
-  <Provider store={store}>
+  <LanguageProvider>
     <BrowserRouter>
       <Switch>
         <Route path="/" exact={true} component={PageInitial} /> {/* eslint-disable-line */}
         <Route path="/login" component={PageLogin} />
-        <Route path="/index" component={PageContent} />
+        <Route path="/index" component={PageIndex} />
       </Switch>
     </BrowserRouter>
-  </Provider>, document.getElementById('root'));
+  </LanguageProvider>,
+  document.getElementById('root')
+);
+registerServiceWorker();
