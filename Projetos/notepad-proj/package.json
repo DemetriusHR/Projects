@@ -1,0 +1,35 @@
+{
+  "name": "notepad",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.10.3",
+    "babel-eslint": "^10.0.1",
+    "prettier": "^1.14.3",
+    "react": "^16.7.0-alpha.0",
+    "react-addons-update": "^15.6.2",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.7.0-alpha.0",
+    "react-icons": "^2.2.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.4.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}

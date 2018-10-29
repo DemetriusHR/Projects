@@ -1,0 +1,31 @@
+{
+  "comments": [
+    {
+      "id": 0,
+      "idProfile": 0,
+      "dateOfComment": "11/06/2018 14:47",
+      "comment": "Porque ele é muito bom, e simples! O Vue é um framework JavaScript progressivo, que pode ser utilizado também como uma lib. Assim como o React, ele também faz uso do virtual DOM, possibilita a criação de componentes e mantém o foco em rotas e no gerenciamento do estado global (assim como o Redux para o React, temos o Vuex para oVue)."
+    },
+
+    {
+      "id": 1,
+      "idProfile": 2,
+      "dateOfComment": "11/05/2018 13:03",
+      "comment": "É importante mencionar que em 2017 o repositório do Vue no GitHub foi o 6º com maior número de forks (fonte: https://octoverse.github.com/). Se você for procurar nos trending repositories no GitHub, verá que diariamente o Vue e diversas extensões para ele estão nessa lista!"
+    },
+
+    {
+      "id": 2,
+      "idProfile": 1,
+      "dateOfComment": "12/02/2018 10:40",
+      "comment": "Na minha opinião, por conta da sua sintaxe e ecossistema, o Vue possui uma curva de aprendizagem menor, quando comparado ao React. Depois, dê uma generosa olhada nessa página, onde a equipe do Vue faz uma comparação direta com outros frameworks — spoiler alert: as comparações são feitas entre Vue com React, Angular, Ember, Knockout, Polymer e Riot."
+    },
+
+    {
+      "id": 3,
+      "idProfile": 2,
+      "dateOfComment": "09/06/2017 12:40",
+      "comment": "Na minha opinião, por conta da sua sintaxe e ecossistema, o Vue possui uma curva de aprendizagem menor, quando comparado ao React. Depois, dê uma generosa olhada nessa página, onde a equipe do Vue faz uma comparação direta com outros frameworks — spoiler alert: as comparações são feitas entre Vue com React, Angular, Ember, Knockout, Polymer e Riot."
+    }
+  ]
+}

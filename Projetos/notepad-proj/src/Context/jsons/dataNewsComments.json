@@ -1,0 +1,59 @@
+{
+  "comments": [
+    {
+      "id": 0,
+      "idProfile": 2,
+      "idNews": 0,
+      "dateOfComment": "11/05/2018",
+      "comment": "You should not assume that everyone knows lodash and underscore. It’s not beginner friendly, and makes everyone who doesn’t use them think they’re doing it wrong their way.",
+      "idProfileResponse": 1,
+      "commentResponse": "Thanks for the insight. I’ve rephrased.",
+      "dateOfCommentResponse": "03/06/2018"
+    },
+
+    {
+      "id": 1,
+      "idProfile": 0,
+      "idNews": 0,
+      "dateOfComment": "11/06/2018",
+      "comment": "Defining moment.js as lightweight is really pushing the definition. It’s commonly known as one of the bulkiest libraries and date.fns is seen as a more lightweight alternative."
+    },
+
+    {
+      "id": 2,
+      "idProfile": 2,
+      "idNews": 2,
+      "dateOfComment": "20/08/2017",
+      "comment": "I think this article is misleading; you say that startups should forgo React if they ever hope to be acquired by a number of big companies, among which you cite Amazon; on the other hand, Amazon uses React without many concerns, apparently (in their AWS Console, for example). It seems like this Patentgeddon is not as big a concern as you put it, at least for the kind of subjects you say it would be a concern for. Also, you work for the Apache Software Foundation; I’m sure many readers won’t have noticed. I think your article should contain a “FULL DISCLOSURE: I WORK FOR APACHE” somewhere, since the “React license” thing is mainly a Facebook — Apache Cat-X thing.",
+      "idProfileResponse": 0,
+      "commentResponse": "Facebook changed React’s license in 2015, before the release of v16.0.0. It is possible that Amazon would’ve already invested effort and resources before the switch, and they simply decided to move ahead. It is also possible for FB and Amazon to have signed a private contract repealing the patent retaliation clause, in exchange for contributions to React. I guess time will tell, as we hear more voices from other companies. With regards to my affiliation to the ASF, *I don’t work for them*. The ASF is a non-profit and I’m a contributor (committer and PMC member). I have not been involved — nor even read — the discussions within the ASF about the topic (if there were any, which I guess there were). My voice is my own. But if I have to pick sides, I will definitely pick the non-profit with almost 20 years history in creating successful OSS communities, vs. a for-profit publicly traded corporation with $500 billion market cap.",
+      "dateOfCommentResponse": "20/08/2017"
+    },
+    {
+      "id": 3,
+      "idProfile": 1,
+      "idNews": 2,
+      "dateOfComment": "22/08/2017",
+      "comment": "Yet another reason why software patents cannot possibly be allowed to exist. They are an abomination of the American legal system, and thank goodness the EU realised how prohibitive this practice is and never implemented it."
+    },
+
+    {
+      "id": 4,
+      "idProfile": 2,
+      "idNews": 3,
+      "dateOfComment": "21/06/2017",
+      "comment": "Muito bom o post, valeu por compartilhar. Sobre o trecho do “Melhor feito que perfeito”, vc tem alguma abordagem prática com relação a front end? Alguma forma de ir construindo por camadas, assim como na imagem que ilustra? Valeu.",
+      "idProfileResponse": 1,
+      "commentResponse": "Existem várias formas de pensar a respeito de componentização no front, mas a discussão que to levantando no artigo não é técnica então serei bem breve: Acho que dá pra aprender muito observando caras como o Bootstrap. I guess time will tell, as we hear more voices from other companies. Botão -> Botão grande -> Botão grande azul “btn” -> “btn btn-lg” -> “btn btn-lg btn-info” Depois disso adicione comportamentos (js).",
+      "dateOfCommentResponse": "21/06/2017"
+    },
+
+    {
+      "id": 5,
+      "idProfile": 0,
+      "idNews": 3,
+      "dateOfComment": "17/10/2017",
+      "comment": "Dicas bem honestas. Preguiça sempre vence mesmo. E eu, por exemplo, descobri que o meu cansaço e desânimo não eram só “preguiça” mas sim hipotireoidismo. Suas dicas são muito válidas!"
+    }
+  ]
+}
