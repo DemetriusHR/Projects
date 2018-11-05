@@ -1,0 +1,231 @@
+@media (orientation: portrait) {
+  .card-content {
+    height: 307px;
+    background: #fff;
+    width: 250px;
+    margin-left: 4%;
+    border-radius: 7px;
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.14);
+  }
+  
+  .card-header {
+    padding: 14px;
+    height: 45px;
+  }
+
+  .icon-user {
+    color: rgb(185, 229, 255);
+    padding: 11px 13px;
+    border-radius: 100%;
+    border: 1px solid #00000017;
+    float: left;
+  }
+
+  .card-content:active {
+    box-shadow: 0px 4px 1px 1px rgba(0, 0, 0, 0);
+  }
+
+  .icon-more {
+    padding: 0 10px 4px;
+    border: 0;
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    float: right;
+  }
+
+  .icon-more:before {
+    content: "...";
+    display: inline-block;
+    position: relative;
+    color: rgba(0, 0, 0, 0.31);
+  }
+
+  .card-bottom {
+    padding: 15px;
+    margin-top: 42%;
+    height: 31.5%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .bottom-title {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 13px;
+    margin-bottom: 6px;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  .bottom-subtitle {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 28px;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  .bottom-progress-line {
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .bottom-progress {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.17);
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 21px;
+    padding: 0;
+    list-style: none;
+    height: 2px;
+    border-radius: 5px;
+    width: 87%;
+  }
+
+  .progress-status {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: #38b4ff94;
+    box-sizing: border-box;
+    height: 6px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 66%;
+    margin-top: -4px;
+  }
+
+  .progress-text {
+    float: right;
+    font-size: 12px;
+    margin-top: -18px;
+    color: #0000008f;
+  }
+
+  .ant-progress {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.65);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+  }
+  .ant-progress-line {
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .ant-progress-outer {
+    display: inline-block;
+    width: 84%;
+    margin-right: 0;
+    padding-right: 0;
+    padding-right: calc(2em + 8px);
+    margin-right: calc(-2em - 8px);
+  }
+  .ant-progress-inner {
+    display: inline-block;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 100px;
+    vertical-align: middle;
+    position: relative;
+  }
+  .ant-progress-success-bg,
+  .ant-progress-bg {
+    border-radius: 100px;
+    background-color: rgb(148, 212, 255);
+    -webkit-transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+    transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+    position: relative;
+  }
+  .ant-progress-success-bg {
+    background-color: #52c41a;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ant-progress-status-success .ant-progress-bg {
+    background-color: #52c41a;
+  }
+  .ant-progress-circle .ant-progress-inner {
+    position: relative;
+    line-height: 1;
+    background-color: transparent;
+  }
+
+  @media screen and (min-height: 320px) and (max-height: 600px) {
+    .card-content {
+      height: 207px;
+    }
+
+    .card-bottom {
+      margin-top: 4%;
+    }
+
+    .content {
+      height: 53vh !important;
+    }
+  }
+
+  @media screen and (max-height: 480px){
+    .content {
+      margin-top: -2px !important;
+    }
+
+    .subheader {
+      padding: 19px 32px !important;
+    }
+
+    .subheader-title {
+      padding-top: 10px !important;
+    }
+
+    .subheader-first {
+      padding: 0px 5px !important;
+    }
+  }
+
+  @media screen and (min-height: 660px) and (max-height: 730px) {
+    .content {
+      height: 59.5vh !important;
+    }
+  }
+
+  @media screen and (min-height: 731px) and (max-height: 811px) {
+    .content {
+      height: 63.7vh !important;
+    }
+  }
+
+  @media screen and (min-height: 812px) and (max-height: 822px) {
+    .content {
+      height: 67.4vh !important;
+    }
+  }
+
+  @media screen and (min-height: 823px) and (max-height: 1023px) {
+    .content {
+      height: 67.9vh !important;
+    }
+  }
+
+  @media screen and (min-height: 1024px) and (max-height: 1365px) {
+    .content {
+      height: 74vh !important;
+    }
+  }
+
+  @media screen and (min-height: 1366px) {
+    .content {
+      height: 80.7vh !important;
+    }
+  }
+}

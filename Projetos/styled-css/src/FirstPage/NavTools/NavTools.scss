@@ -1,0 +1,41 @@
+.navtools {
+  padding: 10px 30%;
+}
+
+.navtools-content {
+  border-bottom: 1px solid #00000018;
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 18px;
+  color: #22222298;
+}
+
+.navtools-component {
+  padding: 11px;
+  border-bottom: 3px solid #ffffff;
+}
+
+.navtools-icons {
+  color: #2222227a;
+}
+
+.navtools-icon-first {
+  padding: 1px 2px;
+}
+
+.navtools-icon-second {
+  padding: 1px 2px;
+}
+
+.icon-discounts {
+  color: #2222227a;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px 2px;
+  border-radius: 100%;
+  width: 24px;
+}
+
+.icon-discounts:before {
+  content: "-$";
+}
